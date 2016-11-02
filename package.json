@@ -11,6 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "reptar-excerpt": "^0.7.0",
-    "reptar-html-minifier": "^0.7.0"
+    "reptar-html-minifier": "^0.7.0",
+    "normalize.css": "^3.0.3"
   }
 }
