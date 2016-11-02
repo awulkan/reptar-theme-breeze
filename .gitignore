@@ -1,6 +1,2 @@
 *
-!INACTIVE_themes
-!README.md
-!_config.yml
-!package.json
-!.gitignore
+!_themes/breeze
