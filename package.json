@@ -1,7 +1,7 @@
 {
-  "name": "Breeze",
+  "name": "repter-theme-breeze",
   "version": "1.0.0",
-  "description": "",
+  "description": "A minimal Reptar theme",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
