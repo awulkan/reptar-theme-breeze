@@ -10,7 +10,7 @@
     {#<p>{{file.excerpt}} <a class="read-more" href="{{file.url}}">&raquo;</a></p>#}
   </section>
   <footer class="post-meta">
-    <time class="post-date" datetime="{{file.date | date('D MMMM YYYY')}}">{{file.date | date('D MMMM YYYY')}}</time>
+    <time class="post-date" datetime="{{file.date | date('YYYY-MM-DD')}}">{{file.date | date('D MMMM YYYY')}}</time>
     &middot;
     <span>{% for tag in file.tags %}
       <a href="/tag/{{tag}}/">{{tag}}</a>
