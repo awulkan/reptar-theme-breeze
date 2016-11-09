@@ -16,9 +16,10 @@
     <link rel="stylesheet" type="text/css" href="{{theme.css}}" />
 </head>
 <body class="{% block body_class %}{% endblock %}">
-    <div class="container">
-        <nav>
-            <ul class="topnav" id="topnav-js">
+
+    <nav class="nav-bg">
+        <div class="container">
+            <ul class="topnav " id="topnav-js">
                 <li><a href="/">{% block header_title %}{{site.title}}{% endblock %}</a></li>
                 <li><a href="#news">News</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -27,7 +28,10 @@
                     <a>&#9776;</a>
                 </li>
             </ul>
-        </nav>
+        </div>
+    </nav>
+
+    <div class="content-container">
 
         <main id="content" role="main">
             {% block content %}{% endblock%}
