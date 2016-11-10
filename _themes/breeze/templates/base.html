@@ -18,6 +18,21 @@
 <body class="{% block body_class %}{% endblock %}">
 
     <nav class="nav-bg">
+        <div class="mobile-logo"><a href="/">Breeze</a></div>
+        <div class="container">
+            <ul class="topnav" id="topnav-js">
+                <li><a href="/">Breeze</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="hamburger">
+        <a>&#9776;</a>
+    </div>
+
+    <!-- <nav class="nav-bg">
         <div class="container">
             <ul class="topnav " id="topnav-js">
                 <li><a href="/">{% block header_title %}{{site.title}}{% endblock %}</a></li>
@@ -29,10 +44,20 @@
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
+
+    <!-- <nav id="slide-menu">
+        <ul>
+            <li class="timeline">Timeline</li>
+            <li class="events">Events</li>
+            <li class="calendar">Calendar</li>
+            <li class="sep settings">Settings</li>
+            <li class="logout">Logout</li>
+        </ul>
+    </nav> -->
 
     <div class="content-container">
-
+        <div class="menu-trigger"></div>
         <main id="content" role="main">
             {% block content %}{% endblock%}
 
