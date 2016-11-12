@@ -95,4 +95,13 @@ body {
     border-top: 1px solid #e1e8ed;
     border-left: 1px solid #e1e8ed;
     border-right: 1px solid #e1e8ed;
+
+    a {
+        text-decoration: none;
+        color: $cloud;
+        
+        &:hover {
+            opacity: 0.8;
+        }
+    }
 }
