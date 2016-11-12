@@ -3,9 +3,7 @@ title: Lorem ipsum is my jam
 date: 2016-11-2
 ---
 
-# Prudens frequentant demersit carinae ferro Numam arcem
-
-## Nondum puerum
+### Nondum puerum
 
 Lorem markdownum montes. In manifesta palmis trahens diversa
 [amentia](http://triste-vero.io/lumine-doque.php). Utroque enim haec et gaudia
@@ -19,7 +17,7 @@ superis baculumque et flore!
 3. Suas vere arboris Nioben bimembres
 4. Duobus robora remotam
 
-## Ibi non instruxit pectora viri tantos
+### Ibi non instruxit pectora viri tantos
 
 Agat cacumina operisque, Boebes fateri longo; limen parte, dum. Ore ad mergor
 luctus, colorem *ille* est *manumque movitque*: duo.
@@ -28,7 +26,7 @@ luctus, colorem *ille* est *manumque movitque*: duo.
 2. Data nec ardente est dei sacra
 3. Viros magnumque convocat
 
-## In aer stetit creatus et vulnere Pyrrha
+### In aer stetit creatus et vulnere Pyrrha
 
 Huius laborant arborei o audito tumescunt poenas occidat freta homines nodoso;
 passu quod fuerant. Gratia prolemque flectat nova Medusaei lugebat stimulis

@@ -18,60 +18,40 @@
 <body class="{% block body_class %}{% endblock %}">
 
     <nav class="nav-bg">
-        <div class="mobile-logo"><a href="/">Breeze</a></div>
         <div class="container">
-            <ul class="topnav" id="topnav-js">
-                <li><a href="/">Breeze</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
+            <div class="nav-container">
+                <div class="site-logo">
+                    <a href="/">{% block header_title %}{{site.title}}{% endblock %}</a>
+                </div>
+                <ul class="topnav" id="topnav-js">
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <div id="hamburger">
         <a>&#9776;</a>
     </div>
 
-    <!-- <nav class="nav-bg">
-        <div class="container">
-            <ul class="topnav " id="topnav-js">
-                <li><a href="/">{% block header_title %}{{site.title}}{% endblock %}</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
-                <li class="icon" id="hamburger">
-                    <a>&#9776;</a>
-                </li>
-            </ul>
+    <div class="container">
+        <div class="content-container">
+            <main id="content" role="main">
+                {% block content %}{% endblock%}
+
+                {% include "_pagination.html" %}
+            </main>
+
+            <footer class="site-footer">
+                <p class="footer-description">
+                    &copy; {{site.title}}
+                </p>
+                <p class="footer-published">
+                    Created by <a href="https://github.com/AWulkan/reptar-theme-breeze">Alex W</a>
+                </p>
+            </footer>
         </div>
-    </nav> -->
-
-    <!-- <nav id="slide-menu">
-        <ul>
-            <li class="timeline">Timeline</li>
-            <li class="events">Events</li>
-            <li class="calendar">Calendar</li>
-            <li class="sep settings">Settings</li>
-            <li class="logout">Logout</li>
-        </ul>
-    </nav> -->
-
-    <div class="content-container">
-        <div class="menu-trigger"></div>
-        <main id="content" role="main">
-            {% block content %}{% endblock%}
-
-            {% include "_pagination.html" %}
-        </main>
-
-        <footer class="site-footer">
-            <p class="footer-description">
-                &copy; {{site.title}}
-            </p>
-            <p class="footer-published">
-                joyfully published by <a href="https://github.com/reptar/reptar">reptar</a>
-            </p>
-        </footer>
     </div>
 
     <script type="text/javascript" src="{{theme.js}}"></script>
