@@ -2,13 +2,21 @@
 @import 'variables';
 @import 'navigation';
 
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
 ul, body, p, article, h1, h2, h3 {
     margin: 0;
     padding: 0;
 }
 
-.post a {
-    color: $cloud;
+h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
 }
 
 li {
@@ -19,7 +27,7 @@ body {
     background-color: $bg;
 }
 
-.post {
+.index-post {
     background-color: #fff;
     margin: 1rem 0.8rem;
     border-radius: 0.5rem;
@@ -30,17 +38,28 @@ body {
     &:hover {
         background-color: #fbfdff;
     }
+}
 
-    .post-title {
-        margin-bottom: 0.7rem;
+.post {
+    background-color: #fff;
+    margin: 1rem 0.8rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: #333;
+    border: 1px solid #e1e8ed;
+}
 
-        a {
-            text-decoration: none;
-            color: $cloud;
+.post-title {
+    margin-bottom: 0.2rem;
+    text-decoration: none;
+    color: $cloud;
 
-            &:hover {
-                opacity: 0.8;
-            }
+    a {
+        text-decoration: none;
+        color: $cloud;
+
+        &:hover {
+            opacity: 0.8;
         }
     }
 }
@@ -68,6 +87,7 @@ body {
     flex-direction: column;
     padding-top: 3.5rem;
     height: calc(100vh - 3.5rem);
+    font-size: 1.1rem;
 }
 
 #content {
@@ -99,7 +119,7 @@ body {
     a {
         text-decoration: none;
         color: $cloud;
-        
+
         &:hover {
             opacity: 0.8;
         }

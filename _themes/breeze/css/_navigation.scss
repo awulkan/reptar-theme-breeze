@@ -45,7 +45,7 @@
 		top: 0;
 		right: 0;
 		font-size: 2rem;
-		padding: 0.5rem 0.7rem;
+		padding: 0.1rem 0.7rem;
 		cursor: pointer;
 		color: #555;
 
@@ -116,18 +116,22 @@
 		li {
 			a {
 				color: #555;
-				margin-left: 4rem;
+				// margin-left: 4rem;
 				font-size: 1.3rem;
-				padding: 0.9rem 1rem;
+				padding: 0.9rem 1.4rem;
+
 
 				&:hover {
 					color: $cloud;
+					-webkit-box-shadow: inset 0px -3px 0px $cloud;
+					-moz-box-shadow: inset 0px -3px 0px $cloud;
+					box-shadow: inset 0px -3px 0px $cloud;
 				}
 			}
 
-			&:last-of-type a {
-				padding-right: 0;
-			}
+			// &:last-of-type a {
+			// 	padding-right: 0;
+			// }
 		}
 	}
 }
