@@ -27,8 +27,10 @@ body {
     background-color: $bg;
 }
 
-.index-post a {
-    color: $cloud;
+.index-post, .post {
+    a {
+        color: $cloud;
+    }
 }
 
 .index-post {
