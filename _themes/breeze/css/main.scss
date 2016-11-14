@@ -27,22 +27,13 @@ body {
     background-color: $bg;
 }
 
+a {
+    transition: all 300ms;
+}
+
 .index-post, .post {
     a {
         color: $cloud;
-    }
-}
-
-.index-post {
-    background-color: #fff;
-    margin: 1rem 0.8rem;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    color: #333;
-    border: 1px solid #e1e8ed;
-
-    &:hover {
-        background-color: #fbfdff;
     }
 }
 
