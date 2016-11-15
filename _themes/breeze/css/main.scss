@@ -124,7 +124,7 @@ a {
 }
 
 
-a.new-window:before {
+a.new-window::before {
     display: inline-block;
     content: "";
     width: 2rem;
