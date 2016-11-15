@@ -1,4 +1,17 @@
 {% for file in pagination.files %}
+
+{% if file.goto %}
+
+<article class="post">
+  <header class="post-header">
+    <h2 class="post-title">
+        <a href="https://{{file.goto}}" target="_blank" rel="nofollow" class="new-window">{{file.title}}</a>
+    </h2>
+  </header>
+</article>
+
+{% else %}
+
 <article class="post">
   <header class="post-header">
     <h2 class="post-title">
@@ -17,4 +30,6 @@
     {% endfor%}</span>
   </footer>
 </article>
+
+{% endif %}
 {% endfor %}
