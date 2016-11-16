@@ -1,0 +1,18 @@
+input, textarea {
+    margin-bottom: 1rem;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0.2em;
+    border: 0.1em solid #bbb;
+    padding: 0.5rem;
+    color: #333;
+
+    &:focus {
+        outline: 0.15em solid $cloud;
+    }
+}
+
+textarea {
+    height: 7rem;
+}
