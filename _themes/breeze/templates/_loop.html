@@ -1,35 +1,30 @@
 {% for file in pagination.files %}
 
-{% if file.goto %}
-
 <article class="post">
-  <header class="post-header">
-    <h2 class="post-title">
-        <a href="https://{{file.goto}}" target="_blank" rel="nofollow" class="new-window">{{file.title}}</a>
-    </h2>
-  </header>
+    <header class="post-header">
+        <h2 class="post-title">
+            {% if file.goto %}
+            <a href="{{file.goto}}" target="_blank" rel="nofollow"><img src="images/new-window.svg" class="new-window">{{file.title}}</a>
+            {% else %}
+            <a href="{{file.url}}">{{file.title}}</a>
+            {% endif %}
+        </h2>
+    </header>
+    <section class="post-excerpt">
+        {{file.excerpt}}
+        {#<p>{{file.excerpt}} <a href="{{file.url}}">&raquo;</a></p>#}
+    </section>
+    <footer class="post-meta">
+        <time class="post-date" datetime="{{file.date | date('YYYY-MM-DD')}}">{{file.date | date('D MMMM YYYY')}}</time>
+        {% if file.tags %}
+        &middot;
+        {% endif %}
+        <span class="post-tags">
+            {% for tag in file.tags %}
+            <a href="/tag/{{tag}}/">{{tag}}</a>
+            {% endfor%}
+        </span>
+    </footer>
 </article>
 
-{% else %}
-
-<article class="post">
-  <header class="post-header">
-    <h2 class="post-title">
-      <a href="{{file.url}}">{{file.title}}</a>
-    </h2>
-  </header>
-  <section class="post-excerpt">
-    {{file.excerpt}}
-    {#<p>{{file.excerpt}} <a class="read-more" href="{{file.url}}">&raquo;</a></p>#}
-  </section>
-  <footer class="post-meta">
-    <time class="post-date" datetime="{{file.date | date('YYYY-MM-DD')}}">{{file.date | date('D MMMM YYYY')}}</time>
-    &middot;
-    <span class="post-tags">{% for tag in file.tags %}
-      <a href="/tag/{{tag}}/">{{tag}}</a>
-    {% endfor%}</span>
-  </footer>
-</article>
-
-{% endif %}
 {% endfor %}

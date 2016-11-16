@@ -24,3 +24,5 @@ assets:
       plugins:
         babelify:
         uglifyify:
+  img:
+    source: ./images/

@@ -31,29 +31,34 @@ a {
     transition: all 300ms;
 }
 
-.index-post, .post {
-    a {
-        color: $cloud;
-    }
-}
-
 .post {
     background-color: #fff;
     margin: 1rem 0.8rem;
     border-radius: 0.5rem;
     padding: 1rem;
-    color: #333;
+    color: #555;
     border: 1px solid #e1e8ed;
+
+    .post-excerpt {
+        color: #777;
+    }
+
+    .post-content {
+        margin-top: 1.5rem;
+    }
+
+    a {
+        color: $cloud;
+    }
 }
 
 .post-title {
     margin-bottom: 0.2rem;
-    text-decoration: none;
-    color: $cloud;
+    color: $cloud; // For inner posts which are not linked anywhere
 
     a {
         text-decoration: none;
-        color: $cloud;
+        color: $cloud; // For index post which are linked
 
         &:hover {
             opacity: 0.8;
@@ -63,7 +68,7 @@ a {
 
 .post-meta {
     .post-date {
-        color: #888;
+        color: #aaa;
     }
 
     .post-tags a {
@@ -124,12 +129,7 @@ a {
 }
 
 
-a.new-window::before {
-    display: inline-block;
-    content: "";
-    width: 2rem;
-    height: 2rem;
-    margin-right: 0.8rem;
+.new-window {
     margin-bottom: -0.4rem;
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iMzJweCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzIgMzI7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnIGlkPSJMYXllcl8xIi8+PGcgaWQ9Im5ld194NUZfd2luZG93Ij48cGF0aCBkPSJNMzIsMEg4djhDNS4wOTQsOCwwLDgsMCw4djI0aDI0di04aDhWMHogTTIwLDI4SDRWMTZoNHY4aDEyQzIwLDI1Ljc4OSwyMCwyOCwyMCwyOHogTTI4LDIwSDEyVjhoMTYgICBWMjB6IiBzdHlsZT0iZmlsbDojNEU0RTUwOyIvPjwvZz48L3N2Zz4=);
+    margin-right: 0.7rem;
 }
