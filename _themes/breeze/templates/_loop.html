@@ -11,8 +11,9 @@
         </h2>
     </header>
     <section class="post-excerpt">
-        {{file.excerpt}}
-        {#<p>{{file.excerpt}} <a href="{{file.url}}">&raquo;</a></p>#}
+        <p>
+            {{file.desc or file.excerpt}}
+        <p>
     </section>
     <footer class="post-meta">
         <time class="post-date" datetime="{{file.date | date('YYYY-MM-DD')}}">{{file.date | date('D MMMM YYYY')}}</time>

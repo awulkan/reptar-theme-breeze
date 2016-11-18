@@ -1,5 +1,6 @@
 ---
 title: Lorem ipsum is my jam
+desc: This is a custom test description. I wrote this by using the Reptar Excerpt plugin and then added a 'desc' metadata field in my post.
 date: 2016-11-2
 ---
 

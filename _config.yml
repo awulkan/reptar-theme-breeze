@@ -147,3 +147,6 @@ plugins:
       removeAttributeQuotes: true
   excerpt:
     enabled: true
+    options:
+      textOnly: true
+      charLimit: 250
