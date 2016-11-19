@@ -12,7 +12,7 @@ enabled: false
     <url>
         <loc>{{ post.url | absolute_url(site.url) }}</loc>
         <lastmod>{{ post.date | date('YYYY-MM-DD') }}</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     {% endfor %}
