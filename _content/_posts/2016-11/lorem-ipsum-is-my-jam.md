@@ -1,6 +1,6 @@
 ---
 title: Lorem ipsum is my jam
-desc: This is a custom test description. I wrote this by using the Reptar Excerpt plugin and then added a 'desc' metadata field in my post.
+desc: This is a custom test description. I did this by creating my own metatag in the post and then referencing it in my Nunjucks template.
 date: 2016-11-02
 ---
 
