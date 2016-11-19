@@ -1,7 +1,7 @@
 ---
 markdown: false
 template: ''
-url: page_sitemap.xml
+url: page-sitemap.xml
 plugins:
 html-minifier:
 enabled: false
