@@ -1,0 +1,19 @@
+---
+markdown: false
+template: ''
+url: page_sitemap.xml
+plugins:
+html-minifier:
+enabled: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% for page in collections.page.files | reverse %}
+    <url>
+        <loc>{{ page.url | absolute_url(site.url) }}</loc>
+        <lastmod>{{ page.date | date('YYYY-MM-DD') }}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    {% endfor %}
+</urlset>

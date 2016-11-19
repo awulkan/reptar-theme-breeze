@@ -1,6 +1,6 @@
 ---
 title: Just an example post
-date: 2016-11-2
+date: 2016-11-02
 ---
 
 ### Attonitum pecudes hoc ambieratque iactatis

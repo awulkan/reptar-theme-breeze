@@ -8,7 +8,7 @@ site:
   description: > # this means to ignore newlines until "baseurl:"
     Your website's description goes here.
   baseurl: "" # the subpath of your site, e.g. /blog
-  url: "http://yourdomain.com" # the base hostname & protocol for your site
+  url: "http://reptar-theme-breeze.netlify.com" # the base hostname & protocol for your site
 
 # Where things are.
 # If you have a unique layout for your site and want to
@@ -32,7 +32,7 @@ file:
   # This current format supports dates like 2016-2-28
   # It uses moment.js under the head and its format syntax as well:
   # http://momentjs.com/docs/#/displaying/format/
-  date_format: YYYY-M-D
+  date_format: YYYY-MM-DD
   # Apply frontmatter values to a File based upon a defined scope.
   # If the scope matches a File then the default values are applied if they
   # are not already set.
@@ -83,6 +83,8 @@ collections:
     permalink:
       index: /
       page:  /page/:page/
+  page:
+    path: ./_content/_pages
   tag:
     metadata: tags
     template: tag
