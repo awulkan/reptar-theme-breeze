@@ -10,7 +10,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "reptar-excerpt": "^0.7.0",
+    "reptar-excerpt": "^0.8.0",
     "reptar-html-minifier": "^0.7.0"
   }
 }
