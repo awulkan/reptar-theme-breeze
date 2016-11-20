@@ -1,5 +1,11 @@
 # Reptar Theme: Breeze
 ### In progress.
-I am still trying to get the hang of Reptar, but this will be a minimalistic Reptar theme when done.
+A minimalistic Twitter-like theme for Reptar, a static site generator built with Node JS.  
 
-Theme demo: http://reptar-theme-breeze.netlify.com/
+Theme demo: http://reptar-theme-breeze.netlify.com/  
+
+#### Features:  
+* Code highlighting.  
+* Responsive design.  
+* Sitemap.  
+* Good content structure.  
