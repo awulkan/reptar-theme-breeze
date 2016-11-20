@@ -16,9 +16,19 @@ ul, body, p, article, h1, h2, h3 {
     padding: 0;
 }
 
-h2 {
+h1, h2, h3, h4 {
+    color: $cloud;
+}
+
+h2, {
     font-size: 1.8rem;
     font-weight: 400;
+}
+
+h3 {
+    font-weight: 500;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
 }
 
 li {
@@ -60,7 +70,7 @@ button {
     }
 
     .post-content {
-        margin-top: 1.5rem;
+        margin-top: 1rem;
     }
 
     a {
@@ -70,11 +80,9 @@ button {
 
 .post-title {
     margin-bottom: 0.2rem;
-    color: $cloud; // For inner posts which are not linked anywhere
 
     a {
         text-decoration: none;
-        color: $cloud; // For index post which are linked
 
         &:hover {
             opacity: 0.8;

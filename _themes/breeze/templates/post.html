@@ -10,9 +10,13 @@
     <h2 class="post-title">{{file.title}}</h2>
     <section class="post-meta">
       <time class="post-date" datetime="{{file.date | date('YYYY-MM-DD')}}">{{file.date | date('D MMMM YYYY')}}</time>
+      {% if file.tags %}
+
       <span class="post-tags">&middot; {% for tag in file.tags %}
         <a href="/tag/{{tag}}/">{{tag}}</a>
       {% endfor%}</span>
+
+      {% endif %}
     </section>
   </header>
 
