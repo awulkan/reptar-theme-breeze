@@ -14,7 +14,7 @@ Theme demo: http://reptar-theme-breeze.netlify.com/
 1. [Get Reptar](http://reptar.github.io/docs/installation/).
 2. Init a new Reptar project.
 3. Clone this repository to another folder.
-4. Replace your current files/folders with the one's from this repo.  
+4. Replace your current project's files and folders with the ones from this repo.  
   * Replace: `_config.yml`  
   * Replace: `package.json`  
   * Replace: `_themes`  
