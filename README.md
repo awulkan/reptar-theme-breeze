@@ -14,11 +14,11 @@ Theme demo: http://reptar-theme-breeze.netlify.com/
 1. [Get Reptar](http://reptar.github.io/docs/installation/).
 2. Init a new Reptar project.
 3. Clone this repository to another folder.
-4. Replace your current files/folderse with the one's from this repo.  
-Replace: `_config.yml`  
-Replace: `package.json`  
-Replace: `_themes`  
-Add: `_content`  
+4. Replace your current files/folders with the one's from this repo.  
+  * Replace: `_config.yml`  
+  * Replace: `package.json`  
+  * Replace: `_themes`  
+  * Add: `_content`  
 
 The `_content` folder is unique to this theme. It lets us save all of our posts and pages into a logical structure. Maybe some time in the future Reptar will have this by default (fingers crossed).  
 
